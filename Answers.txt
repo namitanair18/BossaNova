@@ -1,0 +1,22 @@
+//Fibonacci numbers
+
+PartI
+
+I have completed the iterative function. It supports all numbers upto 100.
+There is a bug in recursive function,unfortunately I was unable to finish it.
+
+PartII
+I would use the iterative function over recursive. The number of recursive function calls to reach the base case
+would be extremely high as n grows, and this would take up lot of stack space.i.e. higher Space complexity.
+Each recursive function call will allocate stack memory thus lowering performance.
+Also switching between functions is processor intensive operation, hence should be kept minimum.
+So I would prefer to use a recursive approch for scenarios with many possible branches that iterative will be too exhaustive.
+eg. in tree and graph structures recurive would make it easier than iterative. 
+
+PartIII
+1.Replace the algorithm with a derived mathematical solution eg.using modular arithmetic to solve
+in contant time complexity.
+2.If calls are made a million times it would be quicker to save factorial of first few elements or 
+specially picked numbers in a table to make it faster. Cost would be memory to store integer numbers. 
+3.I would have passed the values of f0 and f1 to function calls instead of declaring them global.
+4.Include headers that support calculation of integers bigger than 64bits.
